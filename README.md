@@ -7,7 +7,7 @@ React Native is also a good reason for using such a library.
 
 # React Token Auth (v2)
 
-`npm install react-token-auth`
+`npm install @zincycorn/react-token-auth`
 
 ## Motivation
 
@@ -48,7 +48,7 @@ return tokens in the next format:
 The first step you need to do is to create an instance of an `authProvider`.
 
 ```typescript
-import { createAuthProvider } from 'react-token-auth';
+import { createAuthProvider } from '@zincycorn/react-token-auth';
 
 type Session = { 
     accessToken: string
@@ -155,7 +155,7 @@ For example, the session expiration time can be stored in the session object.
 
 To do this, you just need to override `getExpirationTime` in the configuration:
 ```typescript
-import { createAuthProvider } from 'react-token-auth';
+import { createAuthProvider } from '@zincycorn/react-token-auth';
 
 type Session = { 
     accessToken: string
